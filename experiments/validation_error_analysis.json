@@ -1,0 +1,716 @@
+{
+  "split": "validation",
+  "post_freeze_analysis": true,
+  "checkpoint_training": {
+    "ambiguous_questions": 2114,
+    "base_diagnostics": [
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38247975540161133,
+        "feature_set": "text",
+        "fold": 0
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38643421363830566,
+        "feature_set": "text",
+        "fold": 1
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38014740920066836,
+        "feature_set": "text",
+        "fold": 2
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.3876987817287445,
+        "feature_set": "text",
+        "fold": 3
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.3766823863983154,
+        "feature_set": "text",
+        "fold": 4
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2932016998529434,
+        "feature_set": "embedding",
+        "fold": 0
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.3036375313997269,
+        "feature_set": "embedding",
+        "fold": 1
+      },
+      {
+        "best_epoch": 100,
+        "best_loss": 0.30162438452243806,
+        "feature_set": "embedding",
+        "fold": 2
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2934654116630554,
+        "feature_set": "embedding",
+        "fold": 3
+      },
+      {
+        "best_epoch": 100,
+        "best_loss": 0.299190816283226,
+        "feature_set": "embedding",
+        "fold": 4
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.2573813945055008,
+        "feature_set": "full_no_context",
+        "fold": 0
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2663660079240799,
+        "feature_set": "full_no_context",
+        "fold": 1
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.26405916512012484,
+        "feature_set": "full_no_context",
+        "fold": 2
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.2567044019699097,
+        "feature_set": "full_no_context",
+        "fold": 3
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2638713330030441,
+        "feature_set": "full_no_context",
+        "fold": 4
+      },
+      {
+        "best_epoch": 130,
+        "best_loss": 0.23245429694652558,
+        "feature_set": "full",
+        "fold": 0
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.24129309952259065,
+        "feature_set": "full",
+        "fold": 1
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.23907372057437898,
+        "feature_set": "full",
+        "fold": 2
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.23498344123363496,
+        "feature_set": "full",
+        "fold": 3
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.24221217036247253,
+        "feature_set": "full",
+        "fold": 4
+      },
+      {
+        "best_epoch": 180,
+        "best_loss": 0.2347778022289276,
+        "feature_set": "candidate",
+        "fold": 0
+      },
+      {
+        "best_epoch": 170,
+        "best_loss": 0.2398542195558548,
+        "feature_set": "candidate",
+        "fold": 1
+      },
+      {
+        "best_epoch": 180,
+        "best_loss": 0.2369166135787964,
+        "feature_set": "candidate",
+        "fold": 2
+      },
+      {
+        "best_epoch": 190,
+        "best_loss": 0.23922985792160034,
+        "feature_set": "candidate",
+        "fold": 3
+      },
+      {
+        "best_epoch": 170,
+        "best_loss": 0.2411252349615097,
+        "feature_set": "candidate",
+        "fold": 4
+      }
+    ],
+    "base_l2": {
+      "embedding": 0.1,
+      "full": 0.1,
+      "full_no_context": 0.1,
+      "text": 0.001
+    },
+    "candidate_l2": 0.1,
+    "epochs": 220,
+    "feature_sets": [
+      "text",
+      "embedding",
+      "full_no_context",
+      "full",
+      "candidate"
+    ],
+    "folds": 5,
+    "learning_rate": 0.03,
+    "method": "four_group_models_plus_candidate_cross_fold_stack",
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "seed": 7506,
+    "source_split": "train",
+    "stack_diagnostics": {
+      "best_epoch": 220,
+      "best_loss": 0.3054481885433197,
+      "completed_epochs": 220,
+      "feature_dim": 6,
+      "l2": 0.001,
+      "learning_rate": 0.03,
+      "loss_history": [
+        0.59112282622559,
+        0.32564321222901343,
+        0.3197043759226799,
+        0.3185462860763073,
+        0.31368960154056547,
+        0.31069031557440757,
+        0.30952046132087707,
+        0.3086160434782505,
+        0.30798371079564096,
+        0.3075747146606445,
+        0.30722774562239646,
+        0.30694846287369726,
+        0.306723858743906,
+        0.3065334513187408,
+        0.30636848586797716,
+        0.30622176098823545,
+        0.3060884891748428,
+        0.305965345621109,
+        0.305850151181221,
+        0.30574154055118563,
+        0.3056386822462082,
+        0.30554100674390794,
+        0.3054481885433197
+      ],
+      "pairs": 3058,
+      "questions": 2114,
+      "requested_epochs": 220,
+      "seed": 9506,
+      "training_pairwise_top1_accuracy": 0.8235572374645223
+    },
+    "stack_l2": 0.001,
+    "total_questions": 4755,
+    "training_seconds": 14.581081999931484
+  },
+  "counts": {
+    "questions": 798,
+    "ambiguous_questions": 355,
+    "model_errors": 53,
+    "model_only_correct": 68,
+    "plurality_only_correct": 11,
+    "answer_group_count": {
+      "1": 443,
+      "2": 227,
+      "3": 108,
+      "4": 20
+    },
+    "unparseable_candidate_count": {
+      "0": 672,
+      "1": 98,
+      "2": 25,
+      "3": 3
+    }
+  },
+  "confidence_bins": [
+    {
+      "lower_inclusive": 0.0,
+      "upper_exclusive": 0.5,
+      "correct": 23,
+      "n": 39,
+      "accuracy": 58.97435897435897
+    },
+    {
+      "lower_inclusive": 0.5,
+      "upper_exclusive": 1.0,
+      "correct": 20,
+      "n": 34,
+      "accuracy": 58.8235294117647
+    },
+    {
+      "lower_inclusive": 1.0,
+      "upper_exclusive": 2.0,
+      "correct": 66,
+      "n": 80,
+      "accuracy": 82.5
+    },
+    {
+      "lower_inclusive": 2.0,
+      "upper_exclusive": 4.0,
+      "correct": 101,
+      "n": 110,
+      "accuracy": 91.81818181818181
+    },
+    {
+      "lower_inclusive": 4.0,
+      "upper_exclusive": null,
+      "correct": 92,
+      "n": 92,
+      "accuracy": 100.0
+    }
+  ],
+  "model_interpretation": {
+    "feature_block_l2_norms": {},
+    "largest_positive_interpretable_weights": [
+      {
+        "feature": "stack:text",
+        "weight": 0.7893925905227661
+      },
+      {
+        "feature": "stack:candidate",
+        "weight": 0.6210832595825195
+      },
+      {
+        "feature": "stack:embedding",
+        "weight": 0.2835424244403839
+      },
+      {
+        "feature": "stack:full_no_context",
+        "weight": 0.2535725235939026
+      },
+      {
+        "feature": "stack:full",
+        "weight": 0.18044282495975494
+      },
+      {
+        "feature": "stack:group_support",
+        "weight": -0.017848696559667587
+      }
+    ],
+    "largest_negative_interpretable_weights": [
+      {
+        "feature": "stack:group_support",
+        "weight": -0.017848696559667587
+      },
+      {
+        "feature": "stack:full",
+        "weight": 0.18044282495975494
+      },
+      {
+        "feature": "stack:full_no_context",
+        "weight": 0.2535725235939026
+      },
+      {
+        "feature": "stack:embedding",
+        "weight": 0.2835424244403839
+      },
+      {
+        "feature": "stack:candidate",
+        "weight": 0.6210832595825195
+      },
+      {
+        "feature": "stack:text",
+        "weight": 0.7893925905227661
+      }
+    ]
+  },
+  "high_confidence_errors": [
+    {
+      "id": "gsm8k:fd23d86676d457a5edd2ad70cc5accd6b3e3c36e975e3b85316a5e7990357a36",
+      "question": "Andy walks 50 meters from his house to school. After school, he comes back to the house and goes to the market. If he walks 140 meters in total, how many meters is the distance between the house and the market?",
+      "parsed_candidate_answers": [
+        null,
+        "45",
+        "40",
+        null
+      ],
+      "correct_answer": "40",
+      "predicted_answer": "45",
+      "plurality_answer": "45",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 3.9471209049224854
+    },
+    {
+      "id": "gsm8k:c4b2d05db43fd445c39d02bf0522dc37d2f38fa09caadd817c7179ce5591c236",
+      "question": "After negotiating for the price of a phone, Karsyn bought a phone at 20% of the initial price. If the phone's initial price was $600, calculate how much she paid after negotiating.",
+      "parsed_candidate_answers": [
+        "720",
+        "720",
+        "120",
+        "480"
+      ],
+      "correct_answer": "480",
+      "predicted_answer": "720",
+      "plurality_answer": "720",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 2,
+      "margin": 3.6559596061706543
+    },
+    {
+      "id": "gsm8k:340f1d4d09ae053baf7d49d75fd67feec2908fe38ef84d24966817c555c08fdf",
+      "question": "Lexie is 6 years older than her brother and her sister is twice her age. If Lexie is 8, what is the age difference between her brother and her sister?",
+      "parsed_candidate_answers": [
+        "2",
+        "2",
+        "2",
+        "14"
+      ],
+      "correct_answer": "14",
+      "predicted_answer": "2",
+      "plurality_answer": "2",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 3,
+      "margin": 3.1811118125915527
+    },
+    {
+      "id": "gsm8k:a43ceff49caf15e088df74a262ff9e052dd2007849dae692d80b5056583ef20f",
+      "question": "Yun had 20 paperclips initially, but then lost 12. Marion has 1/4 more than what Yun currently has, plus 7. How many paperclips does Marion have?",
+      "parsed_candidate_answers": [
+        "9",
+        "17",
+        "17",
+        "17"
+      ],
+      "correct_answer": "9",
+      "predicted_answer": "17",
+      "plurality_answer": "17",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 3,
+      "margin": 3.176990509033203
+    },
+    {
+      "id": "gsm8k:8d3fe5e63aad094e7ab6c20284db6982e5c97d665e50d32b7af477b05f06db16",
+      "question": "Issac has to buy pens and pencils for the upcoming school year. Issac buys 108 writing utensils total. He buys 12 more than 5 times the number of pencils than pens. How many pens did Issac buy?",
+      "parsed_candidate_answers": [
+        "16",
+        "92",
+        "92",
+        "16"
+      ],
+      "correct_answer": "16",
+      "predicted_answer": "92",
+      "plurality_answer": "16",
+      "model_correct": false,
+      "plurality_correct": true,
+      "answer_group_count": 2,
+      "correct_support": 2,
+      "predicted_support": 2,
+      "margin": 3.0497870445251465
+    },
+    {
+      "id": "gsm8k:130853dbe05e918b28a283d4766a8a5165070d46082b33202b9134d6838802b4",
+      "question": "On a particular day, Rose's teacher read the register and realized there were twice as many girls as boys present on that day. The class has 250 students, and all the 140 girls were present. If all the absent students were boys, how many boys were absent that day?",
+      "parsed_candidate_answers": [
+        "180",
+        "180",
+        "180",
+        "40"
+      ],
+      "correct_answer": "40",
+      "predicted_answer": "180",
+      "plurality_answer": "180",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 3,
+      "margin": 2.6991684436798096
+    },
+    {
+      "id": "gsm8k:6e34c1e8b48d6d60736618bb775253231c94a17141d535057f42481a24263caa",
+      "question": "Lara is baking cookies using four baking trays. She places five rows of cookies on a baking tray where there are six cookies in one row. How many cookies is she baking?",
+      "parsed_candidate_answers": [
+        "120",
+        "24",
+        "30",
+        "30"
+      ],
+      "correct_answer": "120",
+      "predicted_answer": "30",
+      "plurality_answer": "30",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 2,
+      "margin": 2.3645055294036865
+    },
+    {
+      "id": "gsm8k:00e31b0a611584b48fcc02112a30d33ddf10e1aeab28fe502fc3e6662cd80d82",
+      "question": "It takes a butterfly egg 120 days to become a butterfly. If each butterfly spends 3 times as much time as a larva as in a cocoon, how long does each butterfly spend in a cocoon?",
+      "parsed_candidate_answers": [
+        "180",
+        "90",
+        null,
+        "30"
+      ],
+      "correct_answer": "30",
+      "predicted_answer": "90",
+      "plurality_answer": "180",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 2.2325427532196045
+    },
+    {
+      "id": "gsm8k:bb511c804a237d5943987dbb433f2bbdc567950080e2f1ad5be582f807be027a",
+      "question": "James burned his hand in a freak accident.  It takes him 4 weeks to heal enough to get a skin graft.  After that it takes him 50% longer than that to heal from the skin graft.  How long did he take to recover from everything?",
+      "parsed_candidate_answers": [
+        "6",
+        "6",
+        "6",
+        "10"
+      ],
+      "correct_answer": "10",
+      "predicted_answer": "6",
+      "plurality_answer": "6",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 3,
+      "margin": 2.0729758739471436
+    },
+    {
+      "id": "gsm8k:02e6a3586d4118e71421fdc68390a128f9deffd2e36cf200f9d29105c4e0e3e0",
+      "question": "Three different 6th grade classes are combining for a square dancing unit.  If possible, the teachers would like each male student to partner with a female student for the unit.  The first class has 17 males and 13 females, while the second class has 14 males and 18 females, and the third class has 15 males and 17 females.  When the classes are combined, how many students will be unable to partner with a student of the opposite gender?",
+      "parsed_candidate_answers": [
+        "48",
+        "48",
+        "45",
+        "2"
+      ],
+      "correct_answer": "2",
+      "predicted_answer": "48",
+      "plurality_answer": "48",
+      "model_correct": false,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 2,
+      "margin": 1.8567893505096436
+    }
+  ],
+  "high_confidence_plurality_corrections": [
+    {
+      "id": "gsm8k:eb1fbf0cbd85808aad3b8deda1374acf76a5cbb9327fc93e661b01da20249712",
+      "question": "In a school garden, there are flowers in different colors. In total there are 96 flowers of four colors: green, red, blue, and yellow. There are 9 green flowers and three times more red flowers. Blue flowers make up to 50% of the total flower count. How many yellow flowers are there?",
+      "parsed_candidate_answers": [
+        "0",
+        "0",
+        "12",
+        "12"
+      ],
+      "correct_answer": "12",
+      "predicted_answer": "12",
+      "plurality_answer": "0",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 2,
+      "predicted_support": 2,
+      "margin": 6.515150547027588
+    },
+    {
+      "id": "gsm8k:e4263a6e9acbf14688592098f00cfde7acbd8a4fb1e8c04262388cd521b12d6f",
+      "question": "Rookie police officers have to buy duty shoes at the full price of $85, but officers who have served at least a year get a 20% discount. Officers who have served at least three years get an additional 25% off the discounted price. How much does an officer who has served at least three years have to pay for shoes?",
+      "parsed_candidate_answers": [
+        "255/4",
+        "51",
+        "51",
+        "255/4"
+      ],
+      "correct_answer": "51",
+      "predicted_answer": "51",
+      "plurality_answer": "255/4",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 2,
+      "predicted_support": 2,
+      "margin": 6.2039642333984375
+    },
+    {
+      "id": "gsm8k:ee70725dc5040152b5e513809f65dcbf13dac14fb1760f70ca50b0184760f8f5",
+      "question": "The movie theater sold 18 more than three times the number of tickets to the horror movie as it did to the romance movie. If the theater sold 25 tickets to the romance movie, how many tickets did it sell to the horror movie?",
+      "parsed_candidate_answers": [
+        "75",
+        "93",
+        "75",
+        "93"
+      ],
+      "correct_answer": "93",
+      "predicted_answer": "93",
+      "plurality_answer": "75",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 2,
+      "predicted_support": 2,
+      "margin": 6.012874603271484
+    },
+    {
+      "id": "gsm8k:988dcfa71b575d16a3874c5c0837e4e3709570381d3bedcee2ef5598f0b38b24",
+      "question": "Melisa and Jennifer threw a fiftieth birthday party for their father at a local restaurant. When the bill came, Melisa added a 15% tip of $42. Jennifer said that the service was wonderful and they should leave a 20% tip instead. How much is a 20% tip?",
+      "parsed_candidate_answers": [
+        "483/50",
+        "56",
+        "483/50",
+        "84/5"
+      ],
+      "correct_answer": "56",
+      "predicted_answer": "56",
+      "plurality_answer": "483/50",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 5.411386013031006
+    },
+    {
+      "id": "gsm8k:a444df537883e6d6cbce7b7e8e5c260ff3297e5758ca193ab472539365e8914f",
+      "question": "Toby is counting goldfish in the local pond. He knows that only 25% of goldfish are at the surface and the rest are too deep below the surface to be able to see. If he counts 15 goldfish, how many are below the surface?",
+      "parsed_candidate_answers": [
+        "45/4",
+        "45",
+        "45/4",
+        "45/4"
+      ],
+      "correct_answer": "45",
+      "predicted_answer": "45",
+      "plurality_answer": "45/4",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 5.084596633911133
+    },
+    {
+      "id": "gsm8k:72972fbbcc0c9831ee1f35001382080700782ea5c3fb69d75f779e1ed42f2633",
+      "question": "The town is having a race to see who can run around the town square 7 times the fastest. The town square is 3/4 of a mile long. The winner finishes the race in 42 minutes. Last year's winner finished in 47.25 minutes. How many minutes on average faster did this year's winner run one mile of the race compared to last year?",
+      "parsed_candidate_answers": [
+        "1",
+        "-21/4",
+        "3/4",
+        "3/4"
+      ],
+      "correct_answer": "1",
+      "predicted_answer": "1",
+      "plurality_answer": "3/4",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 5.083178520202637
+    },
+    {
+      "id": "gsm8k:f76de0d4b53c296870b8c8e82ea600b166956636b90f2b5be6e4f6b7b6edc89a",
+      "question": "Jamie is a firefighter. One day an emergency call comes in from Mrs. Thompson, an elderly woman whose cat can't get down a 20-foot tree. The last time Jamie rescued a cat, he got it down from a 6-foot tree and had to climb 12 rungs of his ladder. How many rungs does he have to climb this time to get the cat down from the tree?",
+      "parsed_candidate_answers": [
+        "40",
+        "12",
+        "12",
+        "14"
+      ],
+      "correct_answer": "40",
+      "predicted_answer": "40",
+      "plurality_answer": "12",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 4.659564971923828
+    },
+    {
+      "id": "gsm8k:71af2d57a3bdfa4fc96558be6b2cc8e8fa83de621a567bfb6dfee7b8015dc253",
+      "question": "One pair of pants requires 8.5 feet of fabric. Nguyen needs to make 7 pairs of pants for the wedding. He has 3.5 yards of fabric. How many feet of fabric does Nguyen still need for the pants?",
+      "parsed_candidate_answers": [
+        "-49",
+        "-49",
+        "49",
+        "0"
+      ],
+      "correct_answer": "49",
+      "predicted_answer": "49",
+      "plurality_answer": "-49",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 3,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 4.144007205963135
+    },
+    {
+      "id": "gsm8k:88771e1c20d4349ff5f43b594e9ffe7879060f7143314589549fea1b2f82baf0",
+      "question": "Lolita can drink 3 boxes of milk during weekdays. During Saturdays, she can drink twice the number of boxes of milk than on the weekdays, and during Sundays, she can drink thrice the number of boxes of milk than on the weekdays. How many boxes of milk does she drink per week?",
+      "parsed_candidate_answers": [
+        "10",
+        "30",
+        "18",
+        "15"
+      ],
+      "correct_answer": "30",
+      "predicted_answer": "30",
+      "plurality_answer": "10",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 4,
+      "correct_support": 1,
+      "predicted_support": 1,
+      "margin": 3.727334976196289
+    },
+    {
+      "id": "gsm8k:1a6cce6373e7c41ca37e8dfdd654ff37423da26c1ce4f7bc29f21cc4ee87b6af",
+      "question": "Don can paint 3 tiles a minute, Ken can paint 2 more tiles a minute than Don and Laura can paint twice as many tiles as Ken. Kim can paint 3 fewer tiles than Laura can in a minute. How many tiles can Don, Ken, Laura and Kim paint in 15 minutes?",
+      "parsed_candidate_answers": [
+        "25",
+        "375",
+        "25",
+        "375"
+      ],
+      "correct_answer": "375",
+      "predicted_answer": "375",
+      "plurality_answer": "25",
+      "model_correct": true,
+      "plurality_correct": false,
+      "answer_group_count": 2,
+      "correct_support": 2,
+      "predicted_support": 2,
+      "margin": 3.5994832515716553
+    }
+  ]
+}

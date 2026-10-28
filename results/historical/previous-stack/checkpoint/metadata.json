@@ -1,0 +1,206 @@
+{
+  "array_uncompressed_bytes": 194700,
+  "base_feature_schema_hashes": {
+    "embedding": "07e4c89952389fcab6df7701893a1847bc2135f3f297bcc3ffd9a072e783f641",
+    "full": "a51c6c7437583ffd57b9cfcfe2479e83d132aae86b67b7a2445cd2bcfd060c2a",
+    "full_no_context": "bda98c433a5bddaeba2f83c70dfe7b8689d5f727511636724d1ded80dc66216b",
+    "text": "f533148770cc7f19e7423d0fcd9396f1146603eb42c38d69ed7a5c18382db042"
+  },
+  "base_feature_sets": [
+    "text",
+    "embedding",
+    "full_no_context",
+    "full"
+  ],
+  "embedding_dim": 1024,
+  "feature_schema_version": "answer-group-features-v1",
+  "format": "dase7506-mp2-stacked-ranker-v1",
+  "models_per_feature_set": 5,
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "stack_feature_dim": 5,
+  "training": {
+    "ambiguous_questions": 2114,
+    "base_diagnostics": [
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38247975540161133,
+        "feature_set": "text",
+        "fold": 0
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38643421363830566,
+        "feature_set": "text",
+        "fold": 1
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.38014740920066836,
+        "feature_set": "text",
+        "fold": 2
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.3876987817287445,
+        "feature_set": "text",
+        "fold": 3
+      },
+      {
+        "best_epoch": 220,
+        "best_loss": 0.3766823863983154,
+        "feature_set": "text",
+        "fold": 4
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2932016998529434,
+        "feature_set": "embedding",
+        "fold": 0
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.3036375313997269,
+        "feature_set": "embedding",
+        "fold": 1
+      },
+      {
+        "best_epoch": 100,
+        "best_loss": 0.30162438452243806,
+        "feature_set": "embedding",
+        "fold": 2
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2934654116630554,
+        "feature_set": "embedding",
+        "fold": 3
+      },
+      {
+        "best_epoch": 100,
+        "best_loss": 0.299190816283226,
+        "feature_set": "embedding",
+        "fold": 4
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.2573813945055008,
+        "feature_set": "full_no_context",
+        "fold": 0
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2663660079240799,
+        "feature_set": "full_no_context",
+        "fold": 1
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.26405916512012484,
+        "feature_set": "full_no_context",
+        "fold": 2
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.2567044019699097,
+        "feature_set": "full_no_context",
+        "fold": 3
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.2638713330030441,
+        "feature_set": "full_no_context",
+        "fold": 4
+      },
+      {
+        "best_epoch": 130,
+        "best_loss": 0.23245429694652558,
+        "feature_set": "full",
+        "fold": 0
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.24129309952259065,
+        "feature_set": "full",
+        "fold": 1
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.23907372057437898,
+        "feature_set": "full",
+        "fold": 2
+      },
+      {
+        "best_epoch": 120,
+        "best_loss": 0.23498344123363496,
+        "feature_set": "full",
+        "fold": 3
+      },
+      {
+        "best_epoch": 110,
+        "best_loss": 0.24221217036247253,
+        "feature_set": "full",
+        "fold": 4
+      }
+    ],
+    "base_l2": {
+      "embedding": 0.1,
+      "full": 0.1,
+      "full_no_context": 0.1,
+      "text": 0.001
+    },
+    "epochs": 220,
+    "feature_sets": [
+      "text",
+      "embedding",
+      "full_no_context",
+      "full"
+    ],
+    "folds": 5,
+    "learning_rate": 0.03,
+    "method": "four_model_cross_fold_stack",
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "seed": 7506,
+    "source_split": "train",
+    "stack_diagnostics": {
+      "best_epoch": 220,
+      "best_loss": 0.3161738222837448,
+      "completed_epochs": 220,
+      "feature_dim": 5,
+      "l2": 0.01,
+      "learning_rate": 0.03,
+      "loss_history": [
+        0.608756353277713,
+        0.3408228309452534,
+        0.32356923937797544,
+        0.32361067533493043,
+        0.32100937604904173,
+        0.3186758902668953,
+        0.31759838432073595,
+        0.31702634662389756,
+        0.3166737392544746,
+        0.31649571865797044,
+        0.3163803440332413,
+        0.3162990492582321,
+        0.31625121623277663,
+        0.3162227880954742,
+        0.3162053209543228,
+        0.3161948245763779,
+        0.31618827521800996,
+        0.3161840444803238,
+        0.3161809968948364,
+        0.3161787575483322,
+        0.3161768734455109,
+        0.3161752736568451,
+        0.3161738222837448
+      ],
+      "pairs": 3058,
+      "questions": 2114,
+      "requested_epochs": 220,
+      "seed": 9506,
+      "training_pairwise_top1_accuracy": 0.8216650898770104
+    },
+    "stack_l2": 0.01,
+    "total_questions": 4755,
+    "training_seconds": 15.362009832984768
+  }
+}

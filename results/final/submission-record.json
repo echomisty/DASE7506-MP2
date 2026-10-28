@@ -1,0 +1,50 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "frozen_date": "2026-10-15",
+  "timezone": "Asia/Hong_Kong",
+  "configuration": "experiments/final_config.json",
+  "checkpoint": "code/checkpoint/final",
+  "report_status": "11-page bilingual full reports and exact 10-page bilingual submission reports regenerated for the restored linear-candidate checkpoint",
+  "validation": {
+    "correct": 745,
+    "n": 798,
+    "accuracy": 93.35839598997494,
+    "ambiguous_correct": 302,
+    "ambiguous_n": 355,
+    "ambiguous_accuracy": 85.07042253521126,
+    "fresh_process_repeats": 3,
+    "maximum_total_seconds": 1.0063366671092808
+  },
+  "strict_nested_train_cv": {
+    "correct": 1743,
+    "n": 2114,
+    "ambiguous_accuracy": 82.45033112582782,
+    "previous_stack_ambiguous_accuracy": 82.07190160832545
+  },
+  "test": {
+    "evaluated_for_current_checkpoint": true,
+    "final_scoring_only": true,
+    "correct": 382,
+    "n": 467,
+    "accuracy": 81.79871520342613,
+    "fresh_process_repeats": 1,
+    "maximum_total_seconds": 1.2920242077670991,
+    "used_for_improvement_or_selection": false,
+    "historical_previous_stack_correct": 381,
+    "historical_previous_stack_accuracy": 81.5845824411135,
+    "unseen_audit_pending_for_unbiased_comparison": true
+  },
+  "assets": {
+    "array_uncompressed_bytes": 259032,
+    "limit_bytes": 16777216,
+    "within_limit": true
+  },
+  "submission_status": "Artifacts and reports regenerated; package-level model restoration followed public-Test comparison and therefore does not satisfy the coursework Test-isolation rule; unseen audit and website submission remain pending.",
+  "package_selection_history": {
+    "restored_on": "2026-10-28",
+    "reason": "User requested restoration after comparing the historical linear Test score (382/467) with the later MLP Test score (377/467).",
+    "test_informed_package_selection": true,
+    "coursework_test_isolation_compliant": false,
+    "test_rerun_during_restoration": false
+  }
+}

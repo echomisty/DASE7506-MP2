@@ -1,0 +1,17 @@
+experiment_id,hypothesis,feature_set,l2,folds,status,key_result
+E00,Answer plurality is a strong training-free baseline,consensus,,,completed,Validation 86.215539 percent; ambiguous 69.014085 percent
+E01,Trace structure contains correctness signal,text,0.001,5,completed,Train CV ambiguous 76.300292 percent
+E02,Supplied embeddings contain complementary correctness signal,embedding,0.1,5,completed,Train CV ambiguous 76.110383 percent
+E03,Trace and embedding signals complement each other,full_no_context,0.1,5,completed,Train CV ambiguous 80.509675 percent
+E04,Answer-group context improves context-free ranking,full,0.1,5,selected,Train CV ambiguous 81.313905 percent
+E05,Moderate regularization outperforms weak and excessive regularization,full,0.1,5,selected,L2 0.1 exceeds 0.03 0.3 1.0 and 3.0 on train CV
+E06,The selected model generalizes beyond train folds,full,0.1,,completed,Validation 92.606516 percent; ambiguous 83.380282 percent
+E07,Score margin identifies uncertainty,full,0.1,,completed,Validation accuracy rises from 50 percent below margin 0.5 to 100 percent above margin 4
+E08,A plurality override can reduce low-confidence regressions,full,0.1,5,rejected,Cross-fitted ambiguous accuracy fell from 81.315043 to 80.605487 percent
+E09,Additional pooling and lexical features add complementary signal,experimental,,,rejected,All variants underperformed or gave only a negligible CV gain
+E10,A small nonlinear scorer improves linear separability,full,0.1,5,rejected,Ambiguous CV reached 81.409650 percent and did not materially exceed baseline
+E11,Repeated-fold averaging reduces estimator variance,full,0.1,5,rejected,OOF rose to 81.835383 percent but validation stayed at 83.380282 percent ambiguous
+E12,Complementary ranker scores improve group selection,stacked,0.01,5,historical,Strict nested CV ambiguous 82.071902 percent and validation full 93.358396 percent
+E13,Frozen stacked model transfers to the public Test,stacked,0.01,,historical,Test 81.584582 percent versus the earlier baseline 82.441113 percent; no Test-driven tuning
+E14,Alternative objectives and parser lexical or nonlinear extensions improve the stack,experimental,,,rejected,No candidate improved both train evidence and Validation
+E15,Candidate-level evidence complements answer-group aggregation,candidate_stack,0.001,5,selected,Strict nested ambiguous CV 82.450331 percent; Validation 93.358396 percent unchanged

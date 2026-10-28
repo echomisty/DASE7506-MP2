@@ -1,0 +1,83 @@
+{
+  "split": "test",
+  "repeats": 1,
+  "commands": {
+    "prediction": [
+      "/Users/echomisty/Developer/Workspace/HKU/classes/dase/project2/DASE7506-MP2-main/code/.venv/bin/python",
+      "predict.py",
+      "--method",
+      "submission.py",
+      "--checkpoint",
+      "checkpoint/final",
+      "--split",
+      "test",
+      "--output",
+      "../results/final/test-predictions.json"
+    ],
+    "scoring": [
+      "/Users/echomisty/Developer/Workspace/HKU/classes/dase/project2/DASE7506-MP2-main/code/.venv/bin/python",
+      "score_predictions.py",
+      "--split",
+      "test",
+      "--predictions",
+      "../results/final/test-predictions.json",
+      "--output",
+      "../results/final/test-score.json"
+    ]
+  },
+  "environment": {
+    "python": "3.12.13 (main, Jul 18 2026, 16:55:18) [Clang 22.1.3 ]",
+    "platform": "macOS-26.3.2-arm64-arm-64bit",
+    "machine": "arm64",
+    "processor": "arm",
+    "thread_variables": {
+      "OMP_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    }
+  },
+  "checkpoint": {
+    "directory": "checkpoint/final",
+    "files": [
+      {
+        "name": "model.npz",
+        "bytes": 213004,
+        "sha256": "54d86433dc7788021beee13e0ca0a8b2adced5de16d834095cb7027cba4771e3"
+      },
+      {
+        "name": "metadata.json",
+        "bytes": 5158,
+        "sha256": "8e5b6d803a3beed725c95e44c93381ad3792465b19b236c926d05217ac03ff19"
+      }
+    ],
+    "disk_bytes": 218162,
+    "array_uncompressed_bytes": 194700,
+    "limit_bytes": 16777216,
+    "within_limit": true
+  },
+  "runs": [
+    {
+      "repeat": 1,
+      "prediction_process_seconds": 1.6724300830392167,
+      "scoring_process_seconds": 0.11184354196302593,
+      "total_seconds": 1.7842736250022426,
+      "prediction_stdout": "{\"protocol\": \"dase7506-mp2-open-hard-verifier-v5\", \"split\": \"test\", \"prediction_seconds\": 1.5701497909612954}",
+      "scoring_stdout": "{\n  \"protocol\": \"dase7506-mp2-open-hard-verifier-v5\",\n  \"split\": \"test\",\n  \"correct\": 381,\n  \"n\": 467,\n  \"accuracy\": 81.5845824411135,\n  \"scoring_seconds\": 0.012235875008627772\n}"
+    }
+  ],
+  "timing_summary": {
+    "minimum_seconds": 1.7842736250022426,
+    "mean_seconds": 1.7842736250022426,
+    "maximum_seconds": 1.7842736250022426,
+    "reference_limit_seconds": 30.0,
+    "local_maximum_within_limit": true
+  },
+  "official_score": {
+    "protocol": "dase7506-mp2-open-hard-verifier-v5",
+    "split": "test",
+    "correct": 381,
+    "n": 467,
+    "accuracy": 81.5845824411135,
+    "scoring_seconds": 0.012235875008627772
+  }
+}

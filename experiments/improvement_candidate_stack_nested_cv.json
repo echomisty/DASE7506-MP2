@@ -1,0 +1,85 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "source_split": "train",
+  "method": "strict_nested_four_group_plus_linear_candidate_plus_mlp_candidate_stacking",
+  "feature_sets": [
+    "text",
+    "embedding",
+    "full_no_context",
+    "full",
+    "candidate",
+    "candidate_mlp"
+  ],
+  "base_l2": {
+    "text": 0.001,
+    "embedding": 0.1,
+    "full_no_context": 0.1,
+    "full": 0.1
+  },
+  "candidate_l2": 0.1,
+  "candidate_mlp": {
+    "hidden_dim": 8,
+    "epochs": 100,
+    "learning_rate": 0.03,
+    "l2": 0.001
+  },
+  "stack_l2": 0.003,
+  "outer_folds": 5,
+  "inner_folds": 4,
+  "epochs": 220,
+  "learning_rate": 0.03,
+  "seed": 7506,
+  "ambiguous_questions": 2114,
+  "correct": 1741,
+  "nested_oof_ambiguous_accuracy": 82.35572374645223,
+  "baseline_correct": 1721,
+  "baseline_nested_oof_ambiguous_accuracy": 81.40964995269631,
+  "folds": [
+    {
+      "fold": 0,
+      "correct": 346,
+      "n": 422,
+      "ambiguous_accuracy": 81.99052132701422,
+      "baseline_correct": 334,
+      "baseline_ambiguous_accuracy": 79.14691943127963,
+      "meta_best_epoch": 220
+    },
+    {
+      "fold": 1,
+      "correct": 348,
+      "n": 423,
+      "ambiguous_accuracy": 82.26950354609929,
+      "baseline_correct": 352,
+      "baseline_ambiguous_accuracy": 83.21513002364067,
+      "meta_best_epoch": 220
+    },
+    {
+      "fold": 2,
+      "correct": 343,
+      "n": 423,
+      "ambiguous_accuracy": 81.08747044917257,
+      "baseline_correct": 337,
+      "baseline_ambiguous_accuracy": 79.66903073286052,
+      "meta_best_epoch": 220
+    },
+    {
+      "fold": 3,
+      "correct": 351,
+      "n": 423,
+      "ambiguous_accuracy": 82.97872340425532,
+      "baseline_correct": 342,
+      "baseline_ambiguous_accuracy": 80.85106382978724,
+      "meta_best_epoch": 220
+    },
+    {
+      "fold": 4,
+      "correct": 353,
+      "n": 423,
+      "ambiguous_accuracy": 83.451536643026,
+      "baseline_correct": 356,
+      "baseline_ambiguous_accuracy": 84.16075650118204,
+      "meta_best_epoch": 220
+    }
+  ],
+  "elapsed_seconds": 20.243954667123035
+}

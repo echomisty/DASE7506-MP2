@@ -1,0 +1,1911 @@
+{
+  "protocol": "dase7506-mp2-open-hard-verifier-v5",
+  "source_split": "train",
+  "folds": 5,
+  "seed": 7506,
+  "epochs": 220,
+  "learning_rate": 0.03,
+  "plurality_baseline": {
+    "full": {
+      "correct": 4054,
+      "n": 4755,
+      "accuracy": 85.25762355415353
+    },
+    "ambiguous": {
+      "correct": 1413,
+      "n": 2114,
+      "accuracy": 66.84011352885526
+    },
+    "unique_plurality": {
+      "correct": 1202,
+      "n": 1569,
+      "accuracy": 76.60930528999363
+    },
+    "no_unique_plurality": {
+      "correct": 211,
+      "n": 545,
+      "accuracy": 38.71559633027523
+    },
+    "correct_support": {
+      "1": {
+        "correct": 121,
+        "n": 711,
+        "accuracy": 17.018284106891702
+      },
+      "2": {
+        "correct": 621,
+        "n": 732,
+        "accuracy": 84.8360655737705
+      },
+      "3": {
+        "correct": 1070,
+        "n": 1070,
+        "accuracy": 100.0
+      },
+      "4": {
+        "correct": 2242,
+        "n": 2242,
+        "accuracy": 100.0
+      }
+    },
+    "paired_vs_plurality": {
+      "both_correct": 4054,
+      "model_only_correct": 0,
+      "plurality_only_correct": 0,
+      "both_wrong": 701
+    }
+  },
+  "experiments": [
+    {
+      "feature_set": "full",
+      "l2": 0.03,
+      "folds": [
+        {
+          "fold": 0,
+          "metrics": {
+            "full": {
+              "correct": 861,
+              "n": 951,
+              "accuracy": 90.53627760252365
+            },
+            "ambiguous": {
+              "correct": 332,
+              "n": 422,
+              "accuracy": 78.67298578199052
+            },
+            "unique_plurality": {
+              "correct": 263,
+              "n": 315,
+              "accuracy": 83.4920634920635
+            },
+            "no_unique_plurality": {
+              "correct": 69,
+              "n": 107,
+              "accuracy": 64.48598130841121
+            },
+            "correct_support": {
+              "1": {
+                "correct": 80,
+                "n": 142,
+                "accuracy": 56.33802816901409
+              },
+              "2": {
+                "correct": 126,
+                "n": 147,
+                "accuracy": 85.71428571428571
+              },
+              "3": {
+                "correct": 206,
+                "n": 213,
+                "accuracy": 96.71361502347418
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 786,
+              "model_only_correct": 75,
+              "plurality_only_correct": 33,
+              "both_wrong": 57
+            },
+            "confidence_margin": {
+              "finite_n": 422,
+              "mean": 3.36841547347923,
+              "median": 2.7171053886413574
+            }
+          },
+          "training": {
+            "questions": 1692,
+            "pairs": 2448,
+            "feature_dim": 1088,
+            "l2": 0.03,
+            "requested_epochs": 220,
+            "completed_epochs": 210,
+            "best_epoch": 180,
+            "best_loss": 0.1709548959136009,
+            "learning_rate": 0.03,
+            "seed": 7506,
+            "loss_history": [
+              2.040252903997898,
+              0.7570334386825561,
+              0.411382395029068,
+              0.2815673828125,
+              0.2113407802581787,
+              0.18708078026771546,
+              0.17733827084302903,
+              0.17302115947008134,
+              0.17181653797626495,
+              0.17125467121601104,
+              0.17106504678726198,
+              0.17100476443767548,
+              0.1709726023674011,
+              0.17096070885658265,
+              0.17095707595348358,
+              0.1709555706381798,
+              0.17095513314008712,
+              0.17095495760440826,
+              0.1709548959136009,
+              0.1709550341963768,
+              0.171091648042202,
+              0.19599028468132018
+            ],
+            "training_pairwise_top1_accuracy": 0.9462174940898345
+          }
+        },
+        {
+          "fold": 1,
+          "metrics": {
+            "full": {
+              "correct": 877,
+              "n": 951,
+              "accuracy": 92.21871713985279
+            },
+            "ambiguous": {
+              "correct": 349,
+              "n": 423,
+              "accuracy": 82.50591016548464
+            },
+            "unique_plurality": {
+              "correct": 272,
+              "n": 316,
+              "accuracy": 86.07594936708861
+            },
+            "no_unique_plurality": {
+              "correct": 77,
+              "n": 107,
+              "accuracy": 71.96261682242991
+            },
+            "correct_support": {
+              "1": {
+                "correct": 94,
+                "n": 143,
+                "accuracy": 65.73426573426573
+              },
+              "2": {
+                "correct": 128,
+                "n": 146,
+                "accuracy": 87.67123287671232
+              },
+              "3": {
+                "correct": 207,
+                "n": 214,
+                "accuracy": 96.72897196261682
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 783,
+              "model_only_correct": 94,
+              "plurality_only_correct": 26,
+              "both_wrong": 48
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 3.502686897138614,
+              "median": 2.872312307357788
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2447,
+            "feature_dim": 1088,
+            "l2": 0.03,
+            "requested_epochs": 220,
+            "completed_epochs": 210,
+            "best_epoch": 170,
+            "best_loss": 0.1781829333305359,
+            "learning_rate": 0.03,
+            "seed": 7507,
+            "loss_history": [
+              2.0386432734131814,
+              0.669817078113556,
+              0.4193289303779602,
+              0.27429154694080354,
+              0.21623704493045806,
+              0.19527789950370789,
+              0.18358843505382538,
+              0.18015679895877837,
+              0.1789646053314209,
+              0.17852697789669036,
+              0.17829899847507477,
+              0.17822515726089477,
+              0.1781979763507843,
+              0.17818925142288208,
+              0.17818498790264128,
+              0.17818370938301087,
+              0.17818315088748932,
+              0.1781829333305359,
+              0.17818297386169435,
+              0.17828208744525909,
+              0.26884377241134644,
+              0.2975864470005035
+            ],
+            "training_pairwise_top1_accuracy": 0.9491425192193969
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "full": {
+              "correct": 871,
+              "n": 951,
+              "accuracy": 91.58780231335436
+            },
+            "ambiguous": {
+              "correct": 343,
+              "n": 423,
+              "accuracy": 81.08747044917257
+            },
+            "unique_plurality": {
+              "correct": 265,
+              "n": 315,
+              "accuracy": 84.12698412698413
+            },
+            "no_unique_plurality": {
+              "correct": 78,
+              "n": 108,
+              "accuracy": 72.22222222222223
+            },
+            "correct_support": {
+              "1": {
+                "correct": 82,
+                "n": 142,
+                "accuracy": 57.74647887323944
+              },
+              "2": {
+                "correct": 134,
+                "n": 146,
+                "accuracy": 91.78082191780823
+              },
+              "3": {
+                "correct": 207,
+                "n": 215,
+                "accuracy": 96.27906976744185
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 785,
+              "model_only_correct": 86,
+              "plurality_only_correct": 25,
+              "both_wrong": 55
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 3.2773252874788943,
+              "median": 2.7054567337036133
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 0.03,
+            "requested_epochs": 220,
+            "completed_epochs": 200,
+            "best_epoch": 160,
+            "best_loss": 0.17854577720165252,
+            "learning_rate": 0.03,
+            "seed": 7508,
+            "loss_history": [
+              2.028790588080883,
+              0.7258826851844787,
+              0.4230322206020355,
+              0.28598361551761625,
+              0.21896807849407196,
+              0.1950754427909851,
+              0.18393158912658691,
+              0.18059971034526826,
+              0.17923982322216034,
+              0.1788550454378128,
+              0.1786628144979477,
+              0.17858966767787932,
+              0.17856209456920624,
+              0.17855113744735718,
+              0.1785476452112198,
+              0.17854627966880798,
+              0.17854577720165252,
+              0.1785460567474365,
+              0.17920870065689087,
+              0.21269703269004822,
+              0.19542334854602814
+            ],
+            "training_pairwise_top1_accuracy": 0.9450029568302779
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "full": {
+              "correct": 869,
+              "n": 951,
+              "accuracy": 91.37749737118823
+            },
+            "ambiguous": {
+              "correct": 341,
+              "n": 423,
+              "accuracy": 80.61465721040189
+            },
+            "unique_plurality": {
+              "correct": 263,
+              "n": 317,
+              "accuracy": 82.96529968454259
+            },
+            "no_unique_plurality": {
+              "correct": 78,
+              "n": 106,
+              "accuracy": 73.58490566037736
+            },
+            "correct_support": {
+              "1": {
+                "correct": 84,
+                "n": 142,
+                "accuracy": 59.15492957746479
+              },
+              "2": {
+                "correct": 129,
+                "n": 146,
+                "accuracy": 88.35616438356165
+              },
+              "3": {
+                "correct": 208,
+                "n": 215,
+                "accuracy": 96.74418604651163
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 784,
+              "model_only_correct": 85,
+              "plurality_only_correct": 33,
+              "both_wrong": 49
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 3.79953438748141,
+              "median": 2.8562004566192627
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 0.03,
+            "requested_epochs": 220,
+            "completed_epochs": 210,
+            "best_epoch": 180,
+            "best_loss": 0.17006467074155807,
+            "learning_rate": 0.03,
+            "seed": 7509,
+            "loss_history": [
+              2.1831589224934578,
+              0.716907000541687,
+              0.4219234991073608,
+              0.27325394392013547,
+              0.2107831174135208,
+              0.18904782235622405,
+              0.1760701522231102,
+              0.17232420176267624,
+              0.17096009492874145,
+              0.17036419183015822,
+              0.1701829120516777,
+              0.17010595560073852,
+              0.17008343905210493,
+              0.1700713676214218,
+              0.17006703555583955,
+              0.1700654709339142,
+              0.1700649556517601,
+              0.17006474912166594,
+              0.17006467074155807,
+              0.17006469547748565,
+              0.17010265201330185,
+              0.34374877691268924
+            ],
+            "training_pairwise_top1_accuracy": 0.9532820816085157
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "full": {
+              "correct": 872,
+              "n": 951,
+              "accuracy": 91.69295478443743
+            },
+            "ambiguous": {
+              "correct": 344,
+              "n": 423,
+              "accuracy": 81.32387706855792
+            },
+            "unique_plurality": {
+              "correct": 261,
+              "n": 306,
+              "accuracy": 85.29411764705883
+            },
+            "no_unique_plurality": {
+              "correct": 83,
+              "n": 117,
+              "accuracy": 70.94017094017094
+            },
+            "correct_support": {
+              "1": {
+                "correct": 93,
+                "n": 142,
+                "accuracy": 65.49295774647888
+              },
+              "2": {
+                "correct": 125,
+                "n": 147,
+                "accuracy": 85.03401360544218
+              },
+              "3": {
+                "correct": 205,
+                "n": 213,
+                "accuracy": 96.24413145539906
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 769,
+              "model_only_correct": 103,
+              "plurality_only_correct": 30,
+              "both_wrong": 49
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 3.2787793114182513,
+              "median": 2.784496307373047
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2445,
+            "feature_dim": 1088,
+            "l2": 0.03,
+            "requested_epochs": 220,
+            "completed_epochs": 200,
+            "best_epoch": 170,
+            "best_loss": 0.18067470490932463,
+            "learning_rate": 0.03,
+            "seed": 7510,
+            "loss_history": [
+              2.0642683210968973,
+              0.7640546369552612,
+              0.46622658967971803,
+              0.2839189404249191,
+              0.21813952088356017,
+              0.19907575905323027,
+              0.18564761996269225,
+              0.18314998865127563,
+              0.18154612720012664,
+              0.18099456369876862,
+              0.18080535769462586,
+              0.1807197916507721,
+              0.180689035654068,
+              0.18068134725093843,
+              0.1806768262386322,
+              0.18067530453205108,
+              0.1806747508049011,
+              0.18067470490932463,
+              0.1807803851366043,
+              0.20999293267726898,
+              0.24435459673404694
+            ],
+            "training_pairwise_top1_accuracy": 0.9420461265523359
+          }
+        }
+      ],
+      "mean_full_accuracy": 91.48264984227129,
+      "std_full_accuracy": 0.6131390005094964,
+      "mean_ambiguous_accuracy": 80.8409801351215,
+      "std_ambiguous_accuracy": 1.3979771556350398
+    },
+    {
+      "feature_set": "full",
+      "l2": 0.3,
+      "folds": [
+        {
+          "fold": 0,
+          "metrics": {
+            "full": {
+              "correct": 862,
+              "n": 951,
+              "accuracy": 90.64143007360673
+            },
+            "ambiguous": {
+              "correct": 333,
+              "n": 422,
+              "accuracy": 78.90995260663507
+            },
+            "unique_plurality": {
+              "correct": 258,
+              "n": 315,
+              "accuracy": 81.9047619047619
+            },
+            "no_unique_plurality": {
+              "correct": 75,
+              "n": 107,
+              "accuracy": 70.09345794392523
+            },
+            "correct_support": {
+              "1": {
+                "correct": 79,
+                "n": 142,
+                "accuracy": 55.63380281690141
+              },
+              "2": {
+                "correct": 127,
+                "n": 147,
+                "accuracy": 86.39455782312925
+              },
+              "3": {
+                "correct": 207,
+                "n": 213,
+                "accuracy": 97.1830985915493
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 792,
+              "model_only_correct": 70,
+              "plurality_only_correct": 27,
+              "both_wrong": 62
+            },
+            "confidence_margin": {
+              "finite_n": 422,
+              "mean": 2.0853454849519437,
+              "median": 1.7486945390701294
+            }
+          },
+          "training": {
+            "questions": 1692,
+            "pairs": 2448,
+            "feature_dim": 1088,
+            "l2": 0.3,
+            "requested_epochs": 220,
+            "completed_epochs": 160,
+            "best_epoch": 120,
+            "best_loss": 0.2912838876247406,
+            "learning_rate": 0.03,
+            "seed": 7506,
+            "loss_history": [
+              2.1724939793348312,
+              0.7866522252559662,
+              0.4774924159049988,
+              0.34123637080192565,
+              0.318317312002182,
+              0.30318274199962614,
+              0.2944232940673828,
+              0.29245100617408754,
+              0.29179478287696836,
+              0.2914213865995407,
+              0.29133363962173464,
+              0.29131526947021485,
+              0.2912838876247406,
+              0.29214371740818024,
+              0.32806325107812884,
+              0.32078948318958284,
+              0.2958087533712387
+            ],
+            "training_pairwise_top1_accuracy": 0.8764775413711584
+          }
+        },
+        {
+          "fold": 1,
+          "metrics": {
+            "full": {
+              "correct": 881,
+              "n": 951,
+              "accuracy": 92.63932702418506
+            },
+            "ambiguous": {
+              "correct": 353,
+              "n": 423,
+              "accuracy": 83.451536643026
+            },
+            "unique_plurality": {
+              "correct": 277,
+              "n": 316,
+              "accuracy": 87.65822784810126
+            },
+            "no_unique_plurality": {
+              "correct": 76,
+              "n": 107,
+              "accuracy": 71.02803738317758
+            },
+            "correct_support": {
+              "1": {
+                "correct": 91,
+                "n": 143,
+                "accuracy": 63.63636363636363
+              },
+              "2": {
+                "correct": 132,
+                "n": 146,
+                "accuracy": 90.41095890410959
+              },
+              "3": {
+                "correct": 210,
+                "n": 214,
+                "accuracy": 98.13084112149532
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 787,
+              "model_only_correct": 94,
+              "plurality_only_correct": 22,
+              "both_wrong": 48
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 2.1477203411765697,
+              "median": 1.8135699033737183
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2447,
+            "feature_dim": 1088,
+            "l2": 0.3,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.3009733885526657,
+            "learning_rate": 0.03,
+            "seed": 7507,
+            "loss_history": [
+              2.1708562791347505,
+              0.7312253773212433,
+              0.45647579431533813,
+              0.3566248446702957,
+              0.3247252881526947,
+              0.3093335673213005,
+              0.30383106172084806,
+              0.30221564024686814,
+              0.3013732016086578,
+              0.30110647827386855,
+              0.3009733885526657,
+              0.3010565683245659,
+              0.3321997866034508,
+              0.31373039186000823,
+              0.3086123377084732
+            ],
+            "training_pairwise_top1_accuracy": 0.8758131283264341
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "full": {
+              "correct": 862,
+              "n": 951,
+              "accuracy": 90.64143007360673
+            },
+            "ambiguous": {
+              "correct": 334,
+              "n": 423,
+              "accuracy": 78.95981087470449
+            },
+            "unique_plurality": {
+              "correct": 260,
+              "n": 315,
+              "accuracy": 82.53968253968254
+            },
+            "no_unique_plurality": {
+              "correct": 74,
+              "n": 108,
+              "accuracy": 68.51851851851852
+            },
+            "correct_support": {
+              "1": {
+                "correct": 76,
+                "n": 142,
+                "accuracy": 53.521126760563384
+              },
+              "2": {
+                "correct": 133,
+                "n": 146,
+                "accuracy": 91.0958904109589
+              },
+              "3": {
+                "correct": 205,
+                "n": 215,
+                "accuracy": 95.34883720930233
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 783,
+              "model_only_correct": 79,
+              "plurality_only_correct": 27,
+              "both_wrong": 62
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 2.0839895967121103,
+              "median": 1.849050760269165
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 0.3,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.29643760472536085,
+            "learning_rate": 0.03,
+            "seed": 7508,
+            "loss_history": [
+              2.160964643955231,
+              0.7287125706672668,
+              0.4505219966173172,
+              0.34918647557497023,
+              0.3189011633396149,
+              0.3052787706255913,
+              0.2996425464749336,
+              0.2976431354880333,
+              0.29679189920425414,
+              0.29652221500873566,
+              0.29643760472536085,
+              0.29670795500278474,
+              0.2992066591978073,
+              0.2990792453289032,
+              0.31934567987918855
+            ],
+            "training_pairwise_top1_accuracy": 0.8793613246599645
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "full": {
+              "correct": 874,
+              "n": 951,
+              "accuracy": 91.90325972660358
+            },
+            "ambiguous": {
+              "correct": 346,
+              "n": 423,
+              "accuracy": 81.7966903073286
+            },
+            "unique_plurality": {
+              "correct": 266,
+              "n": 317,
+              "accuracy": 83.91167192429022
+            },
+            "no_unique_plurality": {
+              "correct": 80,
+              "n": 106,
+              "accuracy": 75.47169811320755
+            },
+            "correct_support": {
+              "1": {
+                "correct": 85,
+                "n": 142,
+                "accuracy": 59.859154929577464
+              },
+              "2": {
+                "correct": 132,
+                "n": 146,
+                "accuracy": 90.41095890410959
+              },
+              "3": {
+                "correct": 209,
+                "n": 215,
+                "accuracy": 97.20930232558139
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 788,
+              "model_only_correct": 86,
+              "plurality_only_correct": 29,
+              "both_wrong": 48
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 2.2690853559132447,
+              "median": 1.8529692888259888
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 0.3,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.2963458687067032,
+            "learning_rate": 0.03,
+            "seed": 7509,
+            "loss_history": [
+              2.31535764336586,
+              0.7702317714691163,
+              0.47813975214958193,
+              0.3510410159826279,
+              0.3180389925837517,
+              0.3048096373677254,
+              0.29989347159862517,
+              0.29741077721118925,
+              0.29671243131160735,
+              0.2964267984032631,
+              0.29637369960546495,
+              0.2963458687067032,
+              0.30848402976989747,
+              0.30297754257917403,
+              0.3162411481142044,
+              0.3092022716999054
+            ],
+            "training_pairwise_top1_accuracy": 0.8764044943820225
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "full": {
+              "correct": 876,
+              "n": 951,
+              "accuracy": 92.11356466876971
+            },
+            "ambiguous": {
+              "correct": 348,
+              "n": 423,
+              "accuracy": 82.26950354609929
+            },
+            "unique_plurality": {
+              "correct": 262,
+              "n": 306,
+              "accuracy": 85.62091503267973
+            },
+            "no_unique_plurality": {
+              "correct": 86,
+              "n": 117,
+              "accuracy": 73.5042735042735
+            },
+            "correct_support": {
+              "1": {
+                "correct": 89,
+                "n": 142,
+                "accuracy": 62.67605633802817
+              },
+              "2": {
+                "correct": 129,
+                "n": 147,
+                "accuracy": 87.75510204081633
+              },
+              "3": {
+                "correct": 209,
+                "n": 213,
+                "accuracy": 98.12206572769954
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 777,
+              "model_only_correct": 99,
+              "plurality_only_correct": 22,
+              "both_wrong": 53
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.9575443583459156,
+              "median": 1.6339654922485352
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2445,
+            "feature_dim": 1088,
+            "l2": 0.3,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.29924599528312684,
+            "learning_rate": 0.03,
+            "seed": 7510,
+            "loss_history": [
+              2.196443873643875,
+              0.7672745585441589,
+              0.44915233850479125,
+              0.36004871875047684,
+              0.31955944299697875,
+              0.30744860172271726,
+              0.3034066826105118,
+              0.2999468564987183,
+              0.2996667385101318,
+              0.2994403257966042,
+              0.29927155673503875,
+              0.29924599528312684,
+              0.3060729593038559,
+              0.3102991744875908,
+              0.30455970764160156,
+              0.3147382318973541
+            ],
+            "training_pairwise_top1_accuracy": 0.8722649319929036
+          }
+        }
+      ],
+      "mean_full_accuracy": 91.58780231335435,
+      "std_full_accuracy": 0.9045557588898658,
+      "mean_ambiguous_accuracy": 81.0774987955587,
+      "std_ambiguous_accuracy": 2.0467673334046523
+    },
+    {
+      "feature_set": "full",
+      "l2": 1.0,
+      "folds": [
+        {
+          "fold": 0,
+          "metrics": {
+            "full": {
+              "correct": 857,
+              "n": 951,
+              "accuracy": 90.11566771819138
+            },
+            "ambiguous": {
+              "correct": 328,
+              "n": 422,
+              "accuracy": 77.72511848341232
+            },
+            "unique_plurality": {
+              "correct": 256,
+              "n": 315,
+              "accuracy": 81.26984126984127
+            },
+            "no_unique_plurality": {
+              "correct": 72,
+              "n": 107,
+              "accuracy": 67.28971962616822
+            },
+            "correct_support": {
+              "1": {
+                "correct": 76,
+                "n": 142,
+                "accuracy": 53.521126760563384
+              },
+              "2": {
+                "correct": 126,
+                "n": 147,
+                "accuracy": 85.71428571428571
+              },
+              "3": {
+                "correct": 206,
+                "n": 213,
+                "accuracy": 96.71361502347418
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 789,
+              "model_only_correct": 68,
+              "plurality_only_correct": 30,
+              "both_wrong": 64
+            },
+            "confidence_margin": {
+              "finite_n": 422,
+              "mean": 1.6126429691681223,
+              "median": 1.3380495309829712
+            }
+          },
+          "training": {
+            "questions": 1692,
+            "pairs": 2448,
+            "feature_dim": 1088,
+            "l2": 1.0,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.35965387523174286,
+            "learning_rate": 0.03,
+            "seed": 7506,
+            "loss_history": [
+              2.5153412222862244,
+              0.7682000696659088,
+              0.5307961106300354,
+              0.4131501168012619,
+              0.37767770886421204,
+              0.3661131262779236,
+              0.36285194754600525,
+              0.3607570268213749,
+              0.3599228598177433,
+              0.3597200810909271,
+              0.35965387523174286,
+              0.3596614599227905,
+              0.39605140686035156,
+              0.36236653476953506,
+              0.391383558511734
+            ],
+            "training_pairwise_top1_accuracy": 0.8451536643026005
+          }
+        },
+        {
+          "fold": 1,
+          "metrics": {
+            "full": {
+              "correct": 879,
+              "n": 951,
+              "accuracy": 92.42902208201893
+            },
+            "ambiguous": {
+              "correct": 351,
+              "n": 423,
+              "accuracy": 82.97872340425532
+            },
+            "unique_plurality": {
+              "correct": 276,
+              "n": 316,
+              "accuracy": 87.34177215189874
+            },
+            "no_unique_plurality": {
+              "correct": 75,
+              "n": 107,
+              "accuracy": 70.09345794392523
+            },
+            "correct_support": {
+              "1": {
+                "correct": 89,
+                "n": 143,
+                "accuracy": 62.23776223776224
+              },
+              "2": {
+                "correct": 133,
+                "n": 146,
+                "accuracy": 91.0958904109589
+              },
+              "3": {
+                "correct": 209,
+                "n": 214,
+                "accuracy": 97.66355140186916
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 786,
+              "model_only_correct": 93,
+              "plurality_only_correct": 23,
+              "both_wrong": 49
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.6407009656265836,
+              "median": 1.367218017578125
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2447,
+            "feature_dim": 1088,
+            "l2": 1.0,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.36916134506464005,
+            "learning_rate": 0.03,
+            "seed": 7507,
+            "loss_history": [
+              2.5136308670043945,
+              0.855510413646698,
+              0.5202485024929047,
+              0.4186173230409622,
+              0.3870524950325489,
+              0.3774063438177109,
+              0.3725037984549999,
+              0.3699953109025955,
+              0.36941002681851387,
+              0.36919278651475906,
+              0.36916134506464005,
+              0.41567644476890564,
+              0.39741120114922523,
+              0.3967088684439659,
+              0.4122118204832077
+            ],
+            "training_pairwise_top1_accuracy": 0.8444707273802484
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "full": {
+              "correct": 863,
+              "n": 951,
+              "accuracy": 90.7465825446898
+            },
+            "ambiguous": {
+              "correct": 335,
+              "n": 423,
+              "accuracy": 79.19621749408984
+            },
+            "unique_plurality": {
+              "correct": 260,
+              "n": 315,
+              "accuracy": 82.53968253968254
+            },
+            "no_unique_plurality": {
+              "correct": 75,
+              "n": 108,
+              "accuracy": 69.44444444444444
+            },
+            "correct_support": {
+              "1": {
+                "correct": 78,
+                "n": 142,
+                "accuracy": 54.929577464788736
+              },
+              "2": {
+                "correct": 133,
+                "n": 146,
+                "accuracy": 91.0958904109589
+              },
+              "3": {
+                "correct": 204,
+                "n": 215,
+                "accuracy": 94.88372093023256
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 783,
+              "model_only_correct": 80,
+              "plurality_only_correct": 27,
+              "both_wrong": 61
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.6113075583680019,
+              "median": 1.3881908655166626
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 1.0,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.36286433786153793,
+            "learning_rate": 0.03,
+            "seed": 7508,
+            "loss_history": [
+              2.5036381483078003,
+              0.808440774679184,
+              0.5249036252498627,
+              0.4212711304426193,
+              0.380950640887022,
+              0.37145715206861496,
+              0.36576908081769943,
+              0.36408864706754684,
+              0.36326923966407776,
+              0.36296916007995605,
+              0.36286433786153793,
+              0.42132382094860077,
+              0.40268374979496,
+              0.3703841045498848,
+              0.36527789384126663
+            ],
+            "training_pairwise_top1_accuracy": 0.8486102897693673
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "full": {
+              "correct": 874,
+              "n": 951,
+              "accuracy": 91.90325972660358
+            },
+            "ambiguous": {
+              "correct": 346,
+              "n": 423,
+              "accuracy": 81.7966903073286
+            },
+            "unique_plurality": {
+              "correct": 267,
+              "n": 317,
+              "accuracy": 84.22712933753944
+            },
+            "no_unique_plurality": {
+              "correct": 79,
+              "n": 106,
+              "accuracy": 74.52830188679245
+            },
+            "correct_support": {
+              "1": {
+                "correct": 84,
+                "n": 142,
+                "accuracy": 59.15492957746479
+              },
+              "2": {
+                "correct": 130,
+                "n": 146,
+                "accuracy": 89.04109589041096
+              },
+              "3": {
+                "correct": 212,
+                "n": 215,
+                "accuracy": 98.6046511627907
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 788,
+              "model_only_correct": 86,
+              "plurality_only_correct": 29,
+              "both_wrong": 48
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.724254073544315,
+              "median": 1.4147202968597412
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 1.0,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.3657134436070919,
+            "learning_rate": 0.03,
+            "seed": 7509,
+            "loss_history": [
+              2.6580946147441864,
+              0.7918442189693451,
+              0.5292759239673615,
+              0.41597332060337067,
+              0.38341759890317917,
+              0.3737022131681442,
+              0.3693189397454262,
+              0.36678483709692955,
+              0.3659587949514389,
+              0.3658123165369034,
+              0.3657134436070919,
+              0.36573605239391327,
+              0.4377440810203552,
+              0.44752921164035797,
+              0.37197382003068924
+            ],
+            "training_pairwise_top1_accuracy": 0.8379657007687759
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "full": {
+              "correct": 872,
+              "n": 951,
+              "accuracy": 91.69295478443743
+            },
+            "ambiguous": {
+              "correct": 344,
+              "n": 423,
+              "accuracy": 81.32387706855792
+            },
+            "unique_plurality": {
+              "correct": 257,
+              "n": 306,
+              "accuracy": 83.98692810457516
+            },
+            "no_unique_plurality": {
+              "correct": 87,
+              "n": 117,
+              "accuracy": 74.35897435897436
+            },
+            "correct_support": {
+              "1": {
+                "correct": 86,
+                "n": 142,
+                "accuracy": 60.563380281690144
+              },
+              "2": {
+                "correct": 129,
+                "n": 147,
+                "accuracy": 87.75510204081633
+              },
+              "3": {
+                "correct": 208,
+                "n": 213,
+                "accuracy": 97.65258215962442
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 777,
+              "model_only_correct": 95,
+              "plurality_only_correct": 22,
+              "both_wrong": 57
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.531173350100117,
+              "median": 1.2986183166503906
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2445,
+            "feature_dim": 1088,
+            "l2": 1.0,
+            "requested_epochs": 220,
+            "completed_epochs": 140,
+            "best_epoch": 100,
+            "best_loss": 0.3643343262374401,
+            "learning_rate": 0.03,
+            "seed": 7510,
+            "loss_history": [
+              2.5391212701797485,
+              0.7966413646936417,
+              0.5423077642917633,
+              0.41563984751701355,
+              0.39081820473074913,
+              0.37351782619953156,
+              0.36739328503608704,
+              0.3654180020093918,
+              0.36463668569922447,
+              0.3644655793905258,
+              0.3643343262374401,
+              0.37637075036764145,
+              0.38198482245206833,
+              0.37001833319664,
+              0.3941076993942261
+            ],
+            "training_pairwise_top1_accuracy": 0.8391484328799527
+          }
+        }
+      ],
+      "mean_full_accuracy": 91.37749737118823,
+      "std_full_accuracy": 0.9316532674379284,
+      "mean_ambiguous_accuracy": 80.6041253515288,
+      "std_ambiguous_accuracy": 2.1124544197260793
+    },
+    {
+      "feature_set": "full",
+      "l2": 3.0,
+      "folds": [
+        {
+          "fold": 0,
+          "metrics": {
+            "full": {
+              "correct": 845,
+              "n": 951,
+              "accuracy": 88.85383806519454
+            },
+            "ambiguous": {
+              "correct": 316,
+              "n": 422,
+              "accuracy": 74.88151658767772
+            },
+            "unique_plurality": {
+              "correct": 249,
+              "n": 315,
+              "accuracy": 79.04761904761905
+            },
+            "no_unique_plurality": {
+              "correct": 67,
+              "n": 107,
+              "accuracy": 62.61682242990654
+            },
+            "correct_support": {
+              "1": {
+                "correct": 76,
+                "n": 142,
+                "accuracy": 53.521126760563384
+              },
+              "2": {
+                "correct": 117,
+                "n": 147,
+                "accuracy": 79.59183673469387
+              },
+              "3": {
+                "correct": 203,
+                "n": 213,
+                "accuracy": 95.30516431924883
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 777,
+              "model_only_correct": 68,
+              "plurality_only_correct": 42,
+              "both_wrong": 64
+            },
+            "confidence_margin": {
+              "finite_n": 422,
+              "mean": 1.2088576265703446,
+              "median": 1.022370159626007
+            }
+          },
+          "training": {
+            "questions": 1692,
+            "pairs": 2448,
+            "feature_dim": 1088,
+            "l2": 3.0,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.42763176932930946,
+            "learning_rate": 0.03,
+            "seed": 7506,
+            "loss_history": [
+              3.4949046969413757,
+              1.0647281408309937,
+              0.6704932302236557,
+              0.48104462772607803,
+              0.4435242637991905,
+              0.438051188364625,
+              0.43175849691033363,
+              0.42894645035266876,
+              0.4279332682490349,
+              0.4278022386133671,
+              0.42770062759518623,
+              0.42763176932930946,
+              0.42765158973634243,
+              0.43857238441705704,
+              0.4960089363157749,
+              0.48950517550110817
+            ],
+            "training_pairwise_top1_accuracy": 0.8250591016548463
+          }
+        },
+        {
+          "fold": 1,
+          "metrics": {
+            "full": {
+              "correct": 874,
+              "n": 951,
+              "accuracy": 91.90325972660358
+            },
+            "ambiguous": {
+              "correct": 346,
+              "n": 423,
+              "accuracy": 81.7966903073286
+            },
+            "unique_plurality": {
+              "correct": 269,
+              "n": 316,
+              "accuracy": 85.12658227848101
+            },
+            "no_unique_plurality": {
+              "correct": 77,
+              "n": 107,
+              "accuracy": 71.96261682242991
+            },
+            "correct_support": {
+              "1": {
+                "correct": 90,
+                "n": 143,
+                "accuracy": 62.93706293706294
+              },
+              "2": {
+                "correct": 128,
+                "n": 146,
+                "accuracy": 87.67123287671232
+              },
+              "3": {
+                "correct": 208,
+                "n": 214,
+                "accuracy": 97.19626168224299
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 781,
+              "model_only_correct": 93,
+              "plurality_only_correct": 28,
+              "both_wrong": 49
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.2429396099021248,
+              "median": 1.0377674102783203
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2447,
+            "feature_dim": 1088,
+            "l2": 3.0,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.43620989099144936,
+            "learning_rate": 0.03,
+            "seed": 7507,
+            "loss_history": [
+              3.4929875135421753,
+              1.064788579940796,
+              0.6650802753865719,
+              0.48776089400053024,
+              0.45157559774816036,
+              0.4437427520751953,
+              0.43973198533058167,
+              0.4376633185893297,
+              0.4366407301276922,
+              0.43636005744338036,
+              0.4362441301345825,
+              0.43620989099144936,
+              0.436222355812788,
+              0.4795285426080227,
+              0.446599455550313,
+              0.45614519715309143
+            ],
+            "training_pairwise_top1_accuracy": 0.8125369603784742
+          }
+        },
+        {
+          "fold": 2,
+          "metrics": {
+            "full": {
+              "correct": 856,
+              "n": 951,
+              "accuracy": 90.0105152471083
+            },
+            "ambiguous": {
+              "correct": 328,
+              "n": 423,
+              "accuracy": 77.54137115839244
+            },
+            "unique_plurality": {
+              "correct": 259,
+              "n": 315,
+              "accuracy": 82.22222222222223
+            },
+            "no_unique_plurality": {
+              "correct": 69,
+              "n": 108,
+              "accuracy": 63.888888888888886
+            },
+            "correct_support": {
+              "1": {
+                "correct": 80,
+                "n": 142,
+                "accuracy": 56.33802816901409
+              },
+              "2": {
+                "correct": 128,
+                "n": 146,
+                "accuracy": 87.67123287671232
+              },
+              "3": {
+                "correct": 200,
+                "n": 215,
+                "accuracy": 93.02325581395348
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 773,
+              "model_only_correct": 83,
+              "plurality_only_correct": 37,
+              "both_wrong": 58
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.2316078992899568,
+              "median": 1.0470943450927734
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 3.0,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.4293374549597502,
+            "learning_rate": 0.03,
+            "seed": 7508,
+            "loss_history": [
+              3.4827052652835846,
+              1.063123345375061,
+              0.6645500138401985,
+              0.4802807867527008,
+              0.44455742090940475,
+              0.43590347841382027,
+              0.43321757949888706,
+              0.43062991835176945,
+              0.4298117607831955,
+              0.4295128155499697,
+              0.4293638337403536,
+              0.4293374549597502,
+              0.4294232949614525,
+              0.4563950225710869,
+              0.5070673674345016,
+              0.43816162645816803
+            ],
+            "training_pairwise_top1_accuracy": 0.8249556475458308
+          }
+        },
+        {
+          "fold": 3,
+          "metrics": {
+            "full": {
+              "correct": 863,
+              "n": 951,
+              "accuracy": 90.7465825446898
+            },
+            "ambiguous": {
+              "correct": 335,
+              "n": 423,
+              "accuracy": 79.19621749408984
+            },
+            "unique_plurality": {
+              "correct": 259,
+              "n": 317,
+              "accuracy": 81.70347003154573
+            },
+            "no_unique_plurality": {
+              "correct": 76,
+              "n": 106,
+              "accuracy": 71.69811320754717
+            },
+            "correct_support": {
+              "1": {
+                "correct": 80,
+                "n": 142,
+                "accuracy": 56.33802816901409
+              },
+              "2": {
+                "correct": 125,
+                "n": 146,
+                "accuracy": 85.61643835616438
+              },
+              "3": {
+                "correct": 210,
+                "n": 215,
+                "accuracy": 97.67441860465117
+              },
+              "4": {
+                "correct": 448,
+                "n": 448,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 780,
+              "model_only_correct": 83,
+              "plurality_only_correct": 37,
+              "both_wrong": 51
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.284160884735714,
+              "median": 1.0732959508895874
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2446,
+            "feature_dim": 1088,
+            "l2": 3.0,
+            "requested_epochs": 220,
+            "completed_epochs": 170,
+            "best_epoch": 130,
+            "best_loss": 0.43377791345119476,
+            "learning_rate": 0.03,
+            "seed": 7509,
+            "loss_history": [
+              3.637342631816864,
+              1.0457872077822685,
+              0.6709888242185116,
+              0.4861404746770859,
+              0.44664959236979485,
+              0.4427999407052994,
+              0.4385319761931896,
+              0.434863792732358,
+              0.43426206335425377,
+              0.43397970870137215,
+              0.43384991213679314,
+              0.43379622511565685,
+              0.43378788232803345,
+              0.43377791345119476,
+              0.4349002502858639,
+              0.4560694247484207,
+              0.439795583486557,
+              0.43543943017721176
+            ],
+            "training_pairwise_top1_accuracy": 0.81785925487877
+          }
+        },
+        {
+          "fold": 4,
+          "metrics": {
+            "full": {
+              "correct": 872,
+              "n": 951,
+              "accuracy": 91.69295478443743
+            },
+            "ambiguous": {
+              "correct": 344,
+              "n": 423,
+              "accuracy": 81.32387706855792
+            },
+            "unique_plurality": {
+              "correct": 256,
+              "n": 306,
+              "accuracy": 83.66013071895425
+            },
+            "no_unique_plurality": {
+              "correct": 88,
+              "n": 117,
+              "accuracy": 75.21367521367522
+            },
+            "correct_support": {
+              "1": {
+                "correct": 92,
+                "n": 142,
+                "accuracy": 64.78873239436619
+              },
+              "2": {
+                "correct": 126,
+                "n": 147,
+                "accuracy": 85.71428571428571
+              },
+              "3": {
+                "correct": 205,
+                "n": 213,
+                "accuracy": 96.24413145539906
+              },
+              "4": {
+                "correct": 449,
+                "n": 449,
+                "accuracy": 100.0
+              }
+            },
+            "paired_vs_plurality": {
+              "both_correct": 771,
+              "model_only_correct": 101,
+              "plurality_only_correct": 28,
+              "both_wrong": 51
+            },
+            "confidence_margin": {
+              "finite_n": 423,
+              "mean": 1.1500747236059912,
+              "median": 0.9829996824264526
+            }
+          },
+          "training": {
+            "questions": 1691,
+            "pairs": 2445,
+            "feature_dim": 1088,
+            "l2": 3.0,
+            "requested_epochs": 220,
+            "completed_epochs": 150,
+            "best_epoch": 110,
+            "best_loss": 0.4297418463975191,
+            "learning_rate": 0.03,
+            "seed": 7510,
+            "loss_history": [
+              3.5181994438171387,
+              1.0749576762318611,
+              0.6504244059324265,
+              0.49095578864216805,
+              0.4462468586862087,
+              0.43769730627536774,
+              0.43386633694171906,
+              0.4310597740113735,
+              0.43027184531092644,
+              0.4299678560346365,
+              0.42979494854807854,
+              0.4297418463975191,
+              0.4305480197072029,
+              0.43014052882790565,
+              0.47053564339876175,
+              0.46919920668005943
+            ],
+            "training_pairwise_top1_accuracy": 0.8113542282672974
+          }
+        }
+      ],
+      "mean_full_accuracy": 90.64143007360674,
+      "std_full_accuracy": 1.2552404191706958,
+      "mean_ambiguous_accuracy": 78.94793452320931,
+      "std_ambiguous_accuracy": 2.8432521984357084
+    }
+  ],
+  "selected": {
+    "feature_set": "full",
+    "l2": 0.3,
+    "mean_full_accuracy": 91.58780231335435,
+    "mean_ambiguous_accuracy": 81.0774987955587
+  },
+  "elapsed_seconds": 2.886652124929242
+}
