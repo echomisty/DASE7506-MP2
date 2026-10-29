@@ -2,7 +2,7 @@
 
 ## Selected checkpoint
 
-The archive contains the four answer-group rankers plus linear candidate ranker, frozen on 2026-10-15. Its existing public-Test score is 382/467 (81.7987%), recorded once on that checkpoint. Test was not rerun during this restoration. The later MLP alternative scored 377/467. The user requested restoration after seeing this comparison, so Test influenced package-level model selection. This is a documented deviation from the coursework rule; the historical score is not an unbiased estimate for a test-blind selected package.
+The final package uses the four answer-group rankers plus the linear candidate ranker, frozen on 2026-10-15. This checkpoint's existing public-Test score is 382/467 (81.7987%), recorded once. The package was restored on 2026-10-28 after its Test score was compared with the later MLP alternative (377/467). After restoration, no model or checkpoint changes were made and Test was not rerun. Because the comparison informed the restoration, Test influenced final package-level version selection; 81.7987% is therefore a historical score, not an independent test-blind estimate.
 
 ## Matching evidence
 
